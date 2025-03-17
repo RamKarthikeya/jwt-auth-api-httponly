@@ -34,7 +34,7 @@ public class AuthController {
 
     @Autowired
     private AuthenticationManager authenticationManager;
-
+ 
     @GetMapping("/welcome")
     public ResponseEntity<String> welcome() {
         return ResponseEntity.ok("Welcome, this endpoint is not secure.");
